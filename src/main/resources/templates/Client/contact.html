@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="Client/layout :: head"></head>
+
+<body>
+<nav th:replace="Client/layout :: header"></nav>
+
+    <div class="container" id="main-content">
+
+
+    <h2 th:text="${contact.name}">Name</h2>
+    <h2 th:text="${contact.email}">email</h2>
+    <h2 th:text="${contact.phone}">Phone</h2>
+    <a href="#">Delete</a>
+    <a href="#">No</a>
+</div><!-- /.container -->
+
+<footer th:replace="Client/layout :: footer"></footer>
+
+</body>
+</html>
